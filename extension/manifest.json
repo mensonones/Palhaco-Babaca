@@ -1,0 +1,22 @@
+{
+    "manifest_version": 2,
+    "version": "0.0.1",
+    "content_scripts": [
+    {
+      "matches": [
+        "*://*/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_end"
+    }
+  ],
+    "name": "Muda nome",
+    "description": "Extensão que muda o nome daqueles que não podem ser nomeados",
+    "author": "Emerson Vieira",
+    "browser_action": {
+   	 "default_title": "Muda nome",
+   	 "default_icon": "icon.png"
+    }
+}
